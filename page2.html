@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: linear-gradient(60deg, #000, #013);
+            background-size: 200% 200%;
+            animation: gradientFlow 15s ease infinite;
+            color: white;
+			font-size: 40px;
+            font-family: Tahoma, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+		
+		@keyframes gradientFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+		
+        #top, #bottom {
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        #main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+		a:focus {
+            outline: none;
+        }
+		
+        @media (orientation: portrait) and (aspect-ratio: 10/16) {
+            body {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+		<script src="https://cdn.logwork.com/widget/text.js"></script>
+		<a href="https://logwork.com/current-time-in-vinnytsia-ukraine-vinnyts-ka-oblast" class="clock-widget-text" data-timezone="Europe/Zaporozhye" data-language="uk" data-textcolor="#f0f0f0" data-digitscolor="#ffffff">PROMIN</a>
+    </div>
+    <div id="main">
+		<div>
+        <h1>ГРАФІК РОБОТИ:</h1>
+		<h2>10:00 - 19:30</h2>
+		<h2>БЕЗ ВИХІДНИХ</h2>
+		<br/>
+		<br/>
+		<h2>ОДЯГ ДЛЯ ВСІЄЇ РОДИНИ</h2>
+		<h2>🌍PROMIN.UA</h2>
+		</div>
+    </div>
+    <div id="bottom">
+		<a class="weatherwidget-io" href="https://forecast7.com/uk/49d2328d47/vinnytsia/" data-label_1="ВІННИЦЯ" data-label_2="ПОГОДА" data-icons="Climacons" data-days="5" data-theme="dark" data-basecolor="" data-accent="" >ВІННИЦЯ ПОГОДА</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');</script>
+    </div>
+</body>
+</html>
